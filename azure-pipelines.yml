@@ -1,13 +1,13 @@
  
 trigger:
-- develop
+- master
 
 resources:
 - repo: self
 
 variables:
-    ACR.Name: 'demodev'
-    ACR.RepositoryName: 'trialrepoDev'
+    ACR.Name: 'demomaster'
+    ACR.RepositoryName: 'trialrepoMaster'
     ACR.ServiceName: '$(ACR.Name)-service' 
     AKS.KubeDeploymentYaml: 'AKS-deployment.yaml'
     AKS.KubeServiceYaml: 'AKS-service.yaml'
