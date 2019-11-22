@@ -6,7 +6,7 @@ resources:
 - repo: self
 
 variables:
-    ACR.Name: 'demodev123'
+    ACR.Name: 'demodev'
     ACR.RepositoryName: 'trialrepodevelop'
     ACR.ServiceName: '$(ACR.Name)-service' 
     AKS.KubeDeploymentYaml: 'AKS-deployment.yaml'
