@@ -1,0 +1,28 @@
+application {
+config {
+baseName test_code18,
+packageName com.ey,
+applicationType microservice,
+authenticationType jwt,
+ 
+ 
+serviceDiscoveryType no,
+serverPort 8080,
+buildTool maven,
+databaseType no,
+cacheProvider no,
+enableHibernateCache false,
+enableSwaggerCodegen false,
+enableTranslation false
+}
+entities GetBookRequest, AddBookRequest
+}
+entity GetBookRequest {
+ID String
+}entity AddBookRequest {
+Title String,
+Author String,
+ID String
+}
+dto * with mapstruct
+service all with serviceImpl
